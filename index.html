@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<!-- 规范浏览器内核 -->
+		<meta name="renderer" content="webkit"/>
+		<meta name="force-rendering" content="webkit"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+		<!-- bootstrap -->
+		<link rel="stylesheet" type="text/css" href="plugins/bootstrap/bootstrap.min.css"/>
+		<!-- bootstrap-table -->
+		<link rel="stylesheet" type="text/css" href="plugins/bootstrap-table/bootstrap-editable.css"/>
+		<!-- toaster -->
+		<link rel="stylesheet" type="text/css" href="plugins/toastr/toastr.min.css"/>
+		<!-- toaster -->
+		<link rel="stylesheet" type="text/css" href="plugins/swal/sweetalert2.css"/>
+		<!-- datePicker -->
+		<link rel="stylesheet" type="text/css" href="plugins/datetimepicker/bootstrap-datetimepicker.min.css"/>
+	</head>
+	<body>
+		<div class="container">
+			<div>
+				<button onclick="add()">add</button>
+			</div>
+			<table class="table table-bordered" id="dataTable"></table> 
+			<div>
+				<form role="form" id="dataForm">
+				  <div class="form-group">
+				    <label for="name"><span style="color: red;">*</span>名称</label>
+				    <input type="text" class="form-control required" id="name" maxlength="50" name="name" placeholder="请输入名称">
+				  </div>
+				  <div class="form-group">
+				    <label for="date">日期</label>
+				    <input type="text" class="form-control" id="date" name="date" placeholder="请输入日期">
+				  </div>
+				</form>
+				<button type="button" class="btn btn-default"  onclick="submit()">提交</button>
+			</div>
+		</div>
+		
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<!-- bootstrap -->
+		<script src="plugins/bootstrap/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<!-- bootstrap-table -->
+		<script src="plugins/bootstrap-table/bootstrap-table.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="plugins/bootstrap-table/bootstrap-table-zh-CN.js" type="text/javascript" charset="utf-8"></script>
+		<!-- toaster -->
+		<script src="plugins/toastr/toastr.min.js" type="text/javascript" charset="utf-8"></script>
+		<!-- swal -->
+		<script src="plugins/swal/sweetalert2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="plugins/swal/es6-promise.auto.js" type="text/javascript" charset="utf-8"></script>
+		<!-- validate -->
+		<script src="plugins/validate/jquery.validate.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="plugins/validate/validate_expend.js" type="text/javascript" charset="utf-8"></script>
+		<script src="plugins/validate/messages_zh.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="plugins/form/formToObject.js" type="text/javascript" charset="utf-8"></script>
+		<!-- datePicker -->
+		<script src="plugins/datetimepicker/bootstrap-datetimepicker.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="plugins/datetimepicker/bootstrap-datetimepicker.zh-CN.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		
+	</body>
+</html>
